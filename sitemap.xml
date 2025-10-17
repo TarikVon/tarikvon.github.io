@@ -199,13 +199,6 @@
   </url>
   
   <url>
-    <loc>http://www.tarikvon.cn/tags/OVERTURE/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://www.tarikvon.cn/tags/Python/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -221,6 +214,13 @@
   
   <url>
     <loc>http://www.tarikvon.cn/tags/module/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/Pandas/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -248,48 +248,6 @@
   </url>
   
   <url>
-    <loc>http://www.tarikvon.cn/tags/Huawei-Cloud/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/ModelArts/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/Jupyter-Notebook/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/LSTM/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/RNN/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/NLP/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://www.tarikvon.cn/tags/Matplotlib/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -298,76 +256,6 @@
   
   <url>
     <loc>http://www.tarikvon.cn/tags/Seaborn/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/Pandas/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/github/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/Deep-Learning/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/git/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/hexo/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/html/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/markdown/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/software/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/tools/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/what2eat/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -416,6 +304,69 @@
   </url>
   
   <url>
+    <loc>http://www.tarikvon.cn/tags/github/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/NLP/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/LSTM/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/Deep-Learning/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/RNN/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/Huawei-Cloud/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/ModelArts/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/Jupyter-Notebook/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/OVERTURE/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://www.tarikvon.cn/tags/Linux/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -445,6 +396,55 @@
   
   <url>
     <loc>http://www.tarikvon.cn/tags/Network/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/software/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/tools/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/what2eat/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/git/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/hexo/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/html/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/markdown/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -502,14 +502,14 @@
   </url>
   
   <url>
-    <loc>http://www.tarikvon.cn/categories/opsLog/</loc>
+    <loc>http://www.tarikvon.cn/categories/techLog/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://www.tarikvon.cn/categories/techLog/</loc>
+    <loc>http://www.tarikvon.cn/categories/opsLog/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
