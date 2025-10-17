@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.tarikvon.cn/2024/02/14/techLog-2024-02-14/</loc>
+    
+    <lastmod>2025-10-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://www.tarikvon.cn/2023/12/19/oops/</loc>
     
     <lastmod>2025-10-17</lastmod>
@@ -21,15 +30,6 @@
   
   <url>
     <loc>http://www.tarikvon.cn/2023/12/14/what2eat/</loc>
-    
-    <lastmod>2025-10-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/2024/02/14/techLog-2024-02-14/</loc>
     
     <lastmod>2025-10-17</lastmod>
     
@@ -199,13 +199,6 @@
   </url>
   
   <url>
-    <loc>http://www.tarikvon.cn/tags/OVERTURE/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://www.tarikvon.cn/tags/Python/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -234,14 +227,21 @@
   </url>
   
   <url>
-    <loc>http://www.tarikvon.cn/tags/navigation/</loc>
+    <loc>http://www.tarikvon.cn/tags/Matplotlib/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://www.tarikvon.cn/tags/greeting/</loc>
+    <loc>http://www.tarikvon.cn/tags/Seaborn/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/OVERTURE/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -249,6 +249,48 @@
   
   <url>
     <loc>http://www.tarikvon.cn/tags/Pandas/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/Information-Systems/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/Answers/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/Software-Engineering/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/Systems-Analysis/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/Systems-Design/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/Course-Review/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -297,7 +339,21 @@
   </url>
   
   <url>
-    <loc>http://www.tarikvon.cn/tags/github/</loc>
+    <loc>http://www.tarikvon.cn/tags/Huawei/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/HCIP-AI/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/H13-321/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -311,7 +367,21 @@
   </url>
   
   <url>
+    <loc>http://www.tarikvon.cn/tags/CV/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://www.tarikvon.cn/tags/git/</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tarikvon.cn/tags/github/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -395,84 +465,14 @@
   </url>
   
   <url>
-    <loc>http://www.tarikvon.cn/tags/Matplotlib/</loc>
+    <loc>http://www.tarikvon.cn/tags/navigation/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://www.tarikvon.cn/tags/Seaborn/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/Huawei/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/HCIP-AI/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/H13-321/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/CV/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/Information-Systems/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/Answers/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/Software-Engineering/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/Systems-Analysis/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/Systems-Design/</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.tarikvon.cn/tags/Course-Review/</loc>
+    <loc>http://www.tarikvon.cn/tags/greeting/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -488,7 +488,7 @@
   </url>
   
   <url>
-    <loc>http://www.tarikvon.cn/categories/gossip/</loc>
+    <loc>http://www.tarikvon.cn/categories/opsLog/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -502,14 +502,14 @@
   </url>
   
   <url>
-    <loc>http://www.tarikvon.cn/categories/opsLog/</loc>
+    <loc>http://www.tarikvon.cn/categories/techLog/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://www.tarikvon.cn/categories/techLog/</loc>
+    <loc>http://www.tarikvon.cn/categories/gossip/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
