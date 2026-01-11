@@ -1,0 +1,250 @@
+<!doctypehtml><html lang=zh-CN><meta charset=utf-8><meta content=width=device-width,initial-scale=1.0 name=viewport><title>小番茄算法 - 高级图片混淆工具</title><style>:root {
+            --primary: #ff6b6b;
+            --primary-hover: #ee5253;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #2d3436;
+        }
+
+        body { 
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
+            background-color: var(--bg);
+            color: var(--text);
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        h2 { 
+            text-align: center; 
+            margin-top: 0;
+            color: var(--primary);
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .description {
+            text-align: center;
+            color: #636e72;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+
+        /* 按钮样式 */
+        .toolbar { 
+            display: flex; 
+            gap: 12px; 
+            flex-wrap: wrap; 
+            justify-content: center;
+            margin-bottom: 24px; 
+        }
+
+        button, .file-label {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 12px;
+            background: #f1f2f6;
+            color: #2f3542;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        button:hover { background: #dfe4ea; transform: translateY(-1px); }
+        button:active { transform: translateY(0); }
+
+        button#enc, button#dec {
+            background: var(--primary);
+            color: white;
+        }
+
+        button#enc:hover, button#dec:hover {
+            background: var(--primary-hover);
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+        }
+
+        button#dl { background: #2ed573; color: white; }
+        button#dl:hover { background: #7bed9f; }
+
+        input[type="file"] { display: none; }
+
+        /* 画布区域 */
+        .canvas-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        canvas { 
+            max-width: 100%; 
+            height: auto;
+            border: 2px dashed #dfe4ea; 
+            border-radius: 16px;
+            background: #fdfdfd;
+            transition: border-color 0.3s;
+        }
+
+        canvas.dragover {
+            border-color: var(--primary);
+            background: #fff5f5;
+        }
+
+        .status-tip {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #a4b0be;
+        }
+
+        kbd {
+            background: #eee;
+            border-radius: 3px;
+            padding: 2px 5px;
+            font-size: 0.8em;
+            border-bottom: 2px solid #ccc;
+        }</style><body><div class=container><h2>🍅 小番茄图片混淆</h2><p class=description>基于 Gilbert 曲线的无损像素置乱算法，安全地加密你的图片内容。<div class=toolbar><label class=file-label for=file>📁 选择图片 <input accept=image/* id=file type=file></label><button id=clip>📋 剪贴板读取</button><button id=enc>✨ 混淆加密</button><button id=dec>🔍 还原图片</button><button id=dl>💾 下载 PNG</button></div><div class=canvas-container><canvas id=c title=点击或拖拽图片到此处></canvas><p class=status-tip>支持拖拽图片进入、<kbd>Ctrl</kbd>+<kbd>V</kbd> 粘贴</div></div><script>// (保持原有的算法逻辑不变，仅对交互部分做了增强)
+const fileEl = document.getElementById("file");
+const canvas = document.getElementById("c");
+const ctx = canvas.getContext("2d", { willReadFrequently: true });
+
+const TOMATO_KEY = 1;
+let curveCache = { w: 0, h: 0, xs: null, ys: null };
+
+// 算法核心：Gilbert 2D 曲线
+function gilbert2d(width, height) {
+    const n = width * height;
+    const xs = new Int32Array(n);
+    const ys = new Int32Array(n);
+    let idx = 0;
+    function push(x, y) { xs[idx] = x; ys[idx] = y; idx++; }
+    function generate2d(x, y, ax, ay, bx, by) {
+        const w = Math.abs(ax + ay), h = Math.abs(bx + by);
+        const dax = Math.sign(ax), day = Math.sign(ay);
+        const dbx = Math.sign(bx), dby = Math.sign(by);
+        if (h === 1) { for (let i = 0; i < w; i++) { push(x, y); x += dax; y += day; } return; }
+        if (w === 1) { for (let i = 0; i < h; i++) { push(x, y); x += dbx; y += dby; } return; }
+        let ax2 = Math.floor(ax / 2), ay2 = Math.floor(ay / 2);
+        let bx2 = Math.floor(bx / 2), by2 = Math.floor(by / 2);
+        const w2 = Math.abs(ax2 + ay2), h2 = Math.abs(bx2 + by2);
+        if (2 * w > 3 * h) {
+            if ((w2 % 2) && (w > 2)) { ax2 += dax; ay2 += day; }
+            generate2d(x, y, ax2, ay2, bx, by);
+            generate2d(x + ax2, y + ay2, ax - ax2, ay - ay2, bx, by);
+        } else {
+            if ((h2 % 2) && (h > 2)) { bx2 += dbx; by2 += dby; }
+            generate2d(x, y, bx2, by2, ax2, ay2);
+            generate2d(x + bx2, y + by2, ax, ay, bx - bx2, by - by2);
+            generate2d(x + (ax - dax) + (bx2 - dbx), y + (ay - day) + (by2 - dby), -bx2, -by2, -(ax - ax2), -(ay - ay2));
+        }
+    }
+    if (width >= height) generate2d(0, 0, width, 0, 0, height);
+    else generate2d(0, 0, 0, height, width, 0);
+    return { xs, ys };
+}
+
+function getCurve(w, h) {
+    if (curveCache.w === w && curveCache.h === h) return curveCache;
+    curveCache = { w, h, ...gilbert2d(w, h) };
+    return curveCache;
+}
+
+function tomatoTransform(mode) {
+    const w = canvas.width, h = canvas.height;
+    if (!w || !h) { alert("请先上传一张图片 🍅"); return; }
+
+    // 简单视觉反馈
+    const btn = document.getElementById(mode);
+    const originText = btn.innerText;
+    btn.innerText = "处理中...";
+    
+    setTimeout(() => {
+        const n = w * h;
+        const { xs, ys } = getCurve(w, h);
+        const offset = Math.round(((Math.sqrt(5) - 1) / 2) * n * TOMATO_KEY);
+        const src = ctx.getImageData(0, 0, w, h);
+        const dst = new ImageData(w, h);
+
+        for (let i = 0; i < n; i++) {
+            const oldx = xs[i], oldy = ys[i];
+            const j = (i + offset) % n;
+            const newx = xs[j], newy = ys[j];
+            const oldP = 4 * (oldx + oldy * w);
+            const newP = 4 * (newx + newy * w);
+
+            if (mode === "enc") {
+                for(let k=0; k<4; k++) dst.data[newP+k] = src.data[oldP+k];
+            } else {
+                for(let k=0; k<4; k++) dst.data[oldP+k] = src.data[newP+k];
+            }
+        }
+        ctx.putImageData(dst, 0, 0);
+        btn.innerText = originText;
+    }, 50);
+}
+
+// 加载逻辑
+async function loadToCanvasFromBlob(blob) {
+    const img = new Image();
+    img.onload = () => {
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        ctx.drawImage(img, 0, 0);
+        canvas.style.borderStyle = "solid";
+    };
+    img.src = URL.createObjectURL(blob);
+    curveCache = { w: 0, h: 0, xs: null, ys: null };
+}
+
+// 事件监听
+fileEl.onchange = () => fileEl.files?.[0] && loadToCanvasFromBlob(fileEl.files[0]);
+document.getElementById("enc").onclick = () => tomatoTransform("enc");
+document.getElementById("dec").onclick = () => tomatoTransform("dec");
+document.getElementById("dl").onclick = () => {
+    const link = document.createElement("a");
+    link.download = "tomato_output.png";
+    link.href = canvas.toDataURL("image/png");
+    link.click();
+};
+
+// 剪贴板
+document.getElementById("clip").onclick = async () => {
+    try {
+        const items = await navigator.clipboard.read();
+        for (const item of items) {
+            const type = item.types.find(t => t.startsWith("image/"));
+            if (type) {
+                const blob = await item.getType(type);
+                loadToCanvasFromBlob(blob);
+                return;
+            }
+        }
+    } catch (e) { alert("无法读取剪贴板，请尝试 Ctrl+V"); }
+};
+
+// 拖拽上传
+canvas.ondragover = (e) => { e.preventDefault(); canvas.classList.add('dragover'); };
+canvas.ondragleave = () => canvas.classList.remove('dragover');
+canvas.ondrop = (e) => {
+    e.preventDefault();
+    canvas.classList.remove('dragover');
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith("image/")) loadToCanvasFromBlob(file);
+};
+
+// 全局粘贴
+window.addEventListener("paste", (e) => {
+    const file = [...e.clipboardData.items].find(it => it.type.startsWith("image/"))?.getAsFile();
+    if (file) loadToCanvasFromBlob(file);
+});</script>
