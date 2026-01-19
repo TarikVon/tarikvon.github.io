@@ -212,10 +212,22 @@ fileEl.onchange = () => fileEl.files?.[0] && loadToCanvasFromBlob(fileEl.files[0
 document.getElementById("enc").onclick = () => tomatoTransform("enc");
 document.getElementById("dec").onclick = () => tomatoTransform("dec");
 document.getElementById("dl").onclick = () => {
-    const link = document.createElement("a");
-    link.download = "tomato_output.png";
-    link.href = canvas.toDataURL("image/png");
-    link.click();
+  if (!canvas.width || !canvas.height) {
+    alert("请先上传一张图片 🍅");
+    return;
+  }
+  const url = canvas.toDataURL("image/png");
+
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    window.open(url, "_blank");
+  } else {
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "tomato_output.png";
+    a.click();
+  }
 };
 
 // 剪贴板
