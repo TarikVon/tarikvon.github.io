@@ -212,7 +212,27 @@ btf.addGlobalFn('pjaxComplete', () => {
   isHighlightShrink: undefined,
   isToc: true,
   pageType: 'post'
-}</script><link rel="stylesheet" href="/css/site-palette.css"><style>
+}</script><link rel="stylesheet" href="/css/site-palette.css"><script>
+  (() => {
+    const mobile = matchMedia('(max-width: 768px) and (pointer: coarse)');
+    const landscape = matchMedia('(orientation: landscape)');
+    const orientation = screen.orientation;
+    const updateWallpaperHeight = () => {
+      const style = document.documentElement.style;
+      if (!mobile.matches) {
+        style.removeProperty('--site-wallpaper-screen-height');
+        return;
+      }
+      const isLandscape = orientation?.type?.startsWith('landscape') ?? landscape.matches;
+      const height = isLandscape ? Math.min(screen.width, screen.height) : Math.max(screen.width, screen.height);
+      style.setProperty('--site-wallpaper-screen-height', `${height}px`);
+    };
+    updateWallpaperHeight();
+    mobile.addEventListener('change', updateWallpaperHeight);
+    (orientation || landscape).addEventListener('change', updateWallpaperHeight);
+  })();
+</script>
+<style>
   #body-wrap.type-link .flink-list-item > a {
     display: grid;
     height: 100%;
