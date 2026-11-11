@@ -209,27 +209,6 @@
 
   
   <url>
-    <loc>http://tarikvon.com/tags/Python/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/module/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/Pandas/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://tarikvon.com/tags/MIPS/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -272,6 +251,27 @@
   </url>
   
   <url>
+    <loc>http://tarikvon.com/tags/Python/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://tarikvon.com/tags/module/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://tarikvon.com/tags/Pandas/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://tarikvon.com/tags/Matplotlib/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -286,70 +286,21 @@
   </url>
   
   <url>
+    <loc>http://tarikvon.com/tags/navigation/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://tarikvon.com/tags/greeting/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://tarikvon.com/tags/Socket/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/Data-Mining/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/Big-Data/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/Machine-Learning/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/Course-Review/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/Information-Systems/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/Answers/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/Software-Engineering/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/Systems-Analysis/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/Systems-Design/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -398,35 +349,28 @@
   </url>
   
   <url>
-    <loc>http://tarikvon.com/tags/Huawei/</loc>
+    <loc>http://tarikvon.com/tags/Data-Mining/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tarikvon.com/tags/HCIP-AI/</loc>
+    <loc>http://tarikvon.com/tags/Big-Data/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tarikvon.com/tags/H13-321/</loc>
+    <loc>http://tarikvon.com/tags/Machine-Learning/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tarikvon.com/tags/Deep-Learning/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/CV/</loc>
+    <loc>http://tarikvon.com/tags/Course-Review/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -440,28 +384,42 @@
   </url>
   
   <url>
-    <loc>http://tarikvon.com/tags/git/</loc>
+    <loc>http://tarikvon.com/tags/Deep-Learning/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tarikvon.com/tags/hexo/</loc>
+    <loc>http://tarikvon.com/tags/Information-Systems/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tarikvon.com/tags/html/</loc>
+    <loc>http://tarikvon.com/tags/Answers/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tarikvon.com/tags/markdown/</loc>
+    <loc>http://tarikvon.com/tags/Software-Engineering/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://tarikvon.com/tags/Systems-Analysis/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://tarikvon.com/tags/Systems-Design/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -503,6 +461,62 @@
   </url>
   
   <url>
+    <loc>http://tarikvon.com/tags/git/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://tarikvon.com/tags/hexo/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://tarikvon.com/tags/html/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://tarikvon.com/tags/markdown/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://tarikvon.com/tags/Huawei/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://tarikvon.com/tags/HCIP-AI/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://tarikvon.com/tags/H13-321/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://tarikvon.com/tags/CV/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://tarikvon.com/tags/HPC/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -511,20 +525,6 @@
   
   <url>
     <loc>http://tarikvon.com/tags/GPU/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/navigation/</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://tarikvon.com/tags/greeting/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -561,14 +561,14 @@
   </url>
   
   <url>
-    <loc>http://tarikvon.com/categories/deployments/</loc>
+    <loc>http://tarikvon.com/categories/gossip/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://tarikvon.com/categories/opsLog/</loc>
+    <loc>http://tarikvon.com/categories/deployments/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -582,7 +582,7 @@
   </url>
   
   <url>
-    <loc>http://tarikvon.com/categories/gossip/</loc>
+    <loc>http://tarikvon.com/categories/opsLog/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
